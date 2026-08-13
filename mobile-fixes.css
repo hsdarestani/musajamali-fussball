@@ -1,0 +1,118 @@
+/* Mobile overflow hardening */
+html,body{max-width:100%;overflow-x:hidden}
+.hero-copy,.hero-media,.section-title>*,.coach>*,.parents-guide>*,.mental>*,.faq>*,.contact>*,.process-grid>*,.pillar-grid>*,.feedback-grid>*,.price-grid>*,.analysis-flow>*{min-width:0}
+
+@media (max-width:860px){
+  .hero h1,
+  .section-title h2,
+  .coach h2,
+  .guide-intro h2,
+  .mental h2,
+  .faq-head h2,
+  .contact h2{
+    max-width:100%;
+    overflow-wrap:normal;
+    word-break:normal;
+    hyphens:auto;
+  }
+
+  .section-title h2,
+  .coach h2,
+  .guide-intro h2,
+  .faq-head h2,
+  .contact h2{
+    font-size:clamp(46px,13.5vw,72px);
+    line-height:.82;
+  }
+
+  .mental h2{
+    font-size:clamp(40px,11.5vw,62px);
+    line-height:.84;
+  }
+
+  .mental h2 em{
+    display:inline-block;
+    font-size:.86em;
+    max-width:100%;
+  }
+
+  .pillar-card h3,
+  .feedback-card h3,
+  .guide-box strong,
+  .analysis-flow strong,
+  .addon strong,
+  .process-grid h3{
+    max-width:100%;
+    overflow-wrap:break-word;
+    hyphens:auto;
+  }
+
+  .pillar-card h3{font-size:clamp(31px,8.5vw,39px)}
+  .addon{min-width:0}
+  .addon>span{min-width:0}
+  .addon strong{white-space:normal}
+}
+
+@media (max-width:560px){
+  :root{--pad:clamp(16px,5.5vw,22px)}
+
+  .hero h1{
+    font-size:clamp(54px,17.5vw,76px);
+    line-height:.8;
+    max-width:100%;
+  }
+
+  .section-title h2,
+  .coach h2,
+  .guide-intro h2,
+  .faq-head h2,
+  .contact h2{
+    font-size:clamp(38px,12.2vw,58px);
+    line-height:.84;
+    letter-spacing:-.025em;
+  }
+
+  .mental h2{
+    font-size:clamp(34px,10.6vw,50px);
+    line-height:.86;
+  }
+
+  .mental h2 em{
+    font-size:.82em;
+    letter-spacing:-.035em;
+  }
+
+  .pillar-card h3{
+    font-size:clamp(28px,8vw,34px);
+    line-height:.95;
+  }
+
+  .guide-box strong{font-size:clamp(29px,8.5vw,36px)}
+  .price{font-size:clamp(58px,18vw,72px)}
+  .mental-price{font-size:clamp(58px,18vw,72px)}
+
+  .mobile-menu a{
+    font-size:clamp(38px,12vw,58px);
+    overflow-wrap:break-word;
+    hyphens:auto;
+  }
+
+  .hero-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}
+  .hero-meta span{min-width:0;overflow-wrap:break-word}
+
+  .experience{max-width:calc(100% - 8px)}
+  .contact-form,.price-card,.mental-card,.feedback-card,.pillar-card{min-width:0}
+}
+
+@media (max-width:390px){
+  .section-title h2,
+  .coach h2,
+  .guide-intro h2,
+  .faq-head h2,
+  .contact h2{font-size:clamp(36px,11.6vw,45px)}
+
+  .mental h2{font-size:clamp(31px,9.8vw,38px)}
+  .pillar-card h3{font-size:27px}
+  .addon strong{font-size:19px}
+  .addon>b{font-size:21px}
+}
