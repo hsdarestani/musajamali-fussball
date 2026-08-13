@@ -1,3 +1,8 @@
+const mobileFixes = document.createElement('link');
+mobileFixes.rel = 'stylesheet';
+mobileFixes.href = 'mobile-fixes.css';
+document.head.appendChild(mobileFixes);
+
 const header = document.querySelector('.site-header');
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
